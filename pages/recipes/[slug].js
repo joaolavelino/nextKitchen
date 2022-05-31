@@ -31,6 +31,9 @@ const recipeQuery = `*[_type=="recipe" && slug.current == $slug][0]{
 }`;
 
 export default function RecipeDetail({ data, preview }) {
+  const [likes, setLikes] = useState(data?.recipe?.likes);
+  const [fullHeart, setFullHeart] = useState(false);
+
   if (!data)
     return (
       <div className={styles.loading}>
@@ -48,9 +51,6 @@ export default function RecipeDetail({ data, preview }) {
   //   initialData: data,
   //   enabled: preview,
   // });
-
-  const [likes, setLikes] = useState(data?.recipe?.likes);
-  const [fullHeart, setFullHeart] = useState(false);
 
   const addLike = async () => {
     const res = await fetch("/api/handle-like/ ", {

@@ -1,5 +1,5 @@
 1 - Install sanity - <npm install -g @sanity/cli>
-2 - On the project folder, create a sanity project - <sanity init>
+2 - On the project folder, `cr`eate a sanity project - <sanity init>
 ****REMOVE THE SLASH FROM NODE_MODULES FROM THE PROJECT'S GIT IGNORE****
 3 - Create a schema on the schema folder (follow instructions)
 4 - Import the schema on the "schema.js" file..
@@ -26,3 +26,9 @@ on the GetStaticProps function - add "preview: true" to the return of the functi
 pass preview as a prop on the main component
 add the usePreviewSubscription function
 remove the original recipe declaration
+
+DEPLOY THE SANITY backend
+
+enter the studio folder on the terminal
+and deploy <sanity deploy>
+
