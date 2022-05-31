@@ -27,6 +27,16 @@ const recipeQuery = `*[_type=="recipe"]{
 export default function ChefDetails({ chef, recipes }) {
   console.log(chef, recipes);
 
+  if (!chef || !recipes)
+    return (
+      <div className={styles.loading}>
+        <p>Loading...</p>
+        <div className="lds-circle">
+          <div></div>
+        </div>
+      </div>
+    );
+
   return (
     <main>
       <article className={styles.chefDetails}>
