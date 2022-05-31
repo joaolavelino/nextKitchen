@@ -1,0 +1,41 @@
+.title {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.title h2 {
+  font-size: 4rem;
+  font-family: "Lobster", cursive;
+  color: rgb(111, 193, 196);
+}
+.title h3 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.chefList {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 425px) {
+  .title {
+    padding: 4rem 0rem 4rem;
+  }
+  .title h2 {
+    font-size: 3.5rem;
+    font-family: "Lobster", cursive;
+    color: rgb(111, 193, 196);
+  }
+  .title h3 {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+}

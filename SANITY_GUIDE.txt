@@ -1,5 +1,6 @@
 1 - Install sanity - <npm install -g @sanity/cli>
 2 - On the project folder, create a sanity project - <sanity init>
+****REMOVE THE SLASH FROM NODE_MODULES FROM THE PROJECT'S GIT IGNORE****
 3 - Create a schema on the schema folder (follow instructions)
 4 - Import the schema on the "schema.js" file..
 ----now the schema should be displayed on the Sanity UI----
@@ -8,7 +9,7 @@
 
 
 ---connect our sanity backend into the app---
-6 - install next-sanity - <npm install next-sanity>
+6 - install next-sanity - <npm install next-sanity> and portable text <npm install --save @portabletext/react>
 7 - create on the root folder of the application a folder "LIB" and inside of it, create a "sanity.js" file.
 8 - on the sanity JS - do the standard config - (just copy this boilerplate)
 
@@ -16,3 +17,12 @@
 there are all the info abou your projects. go to the current project and to API -> CORS ORIGINS -> ADD CORS ORIGIN
 9 - Add the localhost:3000 (the port we're going to run the project during development - AFTER DEPLOYMENT WE NEED TO ADD A NEW CORS ORIGIN USING THE FINAL PROJECT URL)
 
+on the index.js file on the folder Pages
+10 - import sanityClient and urlFor
+
+LIVE_PREVIEW ---
+on the [slug].js file
+on the GetStaticProps function - add "preview: true" to the return of the function.
+pass preview as a prop on the main component
+add the usePreviewSubscription function
+remove the original recipe declaration

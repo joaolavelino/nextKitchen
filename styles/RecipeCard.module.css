@@ -1,0 +1,57 @@
+.recipeCard {
+  position: relative;
+  list-style: none;
+  background-color: white;
+  border-radius: 1rem;
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  height: 300px;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 2rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 200ms;
+  cursor: pointer;
+  overflow: hidden;
+}
+.recipeCard:hover {
+  transform: translateY(3px);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.recipeCard h4 {
+  font-family: "Lobster", cursive;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 200;
+  z-index: 3;
+  color: white;
+}
+
+.recipeCard img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(255, 255, 255, 0) 40%
+  );
+}

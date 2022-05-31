@@ -1,0 +1,176 @@
+.recipeDetail {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.recipeHeader {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  width: 100%;
+}
+
+.recipeImage {
+  width: 40%;
+  max-width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+.title {
+  font-size: 5rem;
+  font-family: "Lobster", cursive;
+  color: rgb(111, 193, 196);
+  line-height: 90%;
+}
+
+.chefCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+  margin-top: 1rem;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.chefCard:hover {
+  transform: scale(1.01);
+}
+
+.chefCard h3 {
+  font-weight: 300;
+}
+.chefCard span {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  line-height: 90%;
+  font-weight: 700;
+}
+
+.chefCard img {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 050%;
+  object-fit: cover;
+}
+
+.section {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 2px solid rgb(111, 193, 196);
+}
+
+.sectionLabel {
+  font-size: 2rem;
+  font-family: "Lobster", cursive;
+  color: rgb(111, 193, 196);
+  margin-bottom: 1rem;
+}
+
+.ingredientList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.instructions {
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.2) inset;
+  padding: 2rem 3rem;
+}
+
+.instructions,
+.instructions ul,
+.instructions ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.instructions li {
+  margin-left: 1rem;
+}
+
+.likeButton {
+  font-size: 1.5rem;
+  color: rgb(111, 193, 196);
+  border: 2px solid rgb(111, 193, 196);
+  padding: 3px 10px;
+  background-color: transparent;
+  border-radius: 1.5em;
+  min-width: 3rem;
+  transition: 150ms;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.likeButton:hover {
+  background-color: rgb(111, 193, 196);
+  border: 2px solid rgb(111, 193, 196);
+  color: bisque;
+}
+.likeButton span {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.likeButtonActive {
+  background-color: rgb(111, 193, 196);
+  border: 2px solid rgb(111, 193, 196);
+  color: bisque;
+}
+
+@media screen and (max-width: 767px) {
+  .recipeHeader {
+    flex-direction: column;
+  }
+  .titleDiv {
+    text-align: center;
+  }
+  .recipeHeader img {
+    width: 100%;
+  }
+  .title {
+    font-size: 4rem;
+  }
+  .chefCard {
+    height: 96px;
+    justify-content: center;
+  }
+  .chefCard img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading p {
+  font-size: 2rem;
+  font-family: "Lobster", cursive;
+  color: rgb(111, 193, 196);
+  line-height: 90%;
+}
+
+@media screen and (max-width: 639px) {
+  .instructions {
+    padding: 1.5rem 1rem;
+  }
+
+  .recipeImage {
+    height: 300px;
+  }
+}
