@@ -6,7 +6,7 @@ export default function Footer() {
       <div className={styles.subDiv}>
         <h5 className={styles.footerTitle}>NEXT KITCHEN</h5>
         <h6 className={styles.footerSubtitle}>
-          Created by João Avelino using Next.js and Sanity
+          Created by João Avelino with Next.js and Sanity
         </h6>
       </div>
       <div className={styles.subDiv}>
