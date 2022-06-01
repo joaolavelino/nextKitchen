@@ -1,5 +1,7 @@
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
+import logo from "../media/logo.png";
+import Image from "next/image";
 
 const Navbar = () => {
   return (

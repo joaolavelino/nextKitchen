@@ -85,4 +85,9 @@
     font-size: 1.5rem;
     font-weight: 200;
   }
+  .search input {
+    width: 200px;
+    font-size: 1.25rem;
+    height: 44px;
+  }
 }
