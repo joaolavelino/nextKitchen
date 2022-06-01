@@ -85,5 +85,8 @@ export async function getStaticProps({ params }) {
     (recipe) => recipe.chef.slug.current === slug
   );
   const chef = await sanityClient.fetch(chefQuery, { slug });
-  return { props: { chef: chef, recipes: recipesByChef, preview: true } };
+  return {
+    props: { chef: chef, recipes: recipesByChef, preview: true },
+    revalidate: 10,
+  };
 }
