@@ -67,12 +67,6 @@ export default function Home({ recipes }) {
                 <RecipeCard recipe={recipe} key={recipe._id} />
               ))}
           </ul>
-          <ul className={styles.recipeList}>
-            {displayedRecipes?.length > 0 &&
-              displayedRecipes.map((recipe) => (
-                <RecipeCard recipe={recipe} key={recipe._id} />
-              ))}
-          </ul>
         </section>
       </main>
 
