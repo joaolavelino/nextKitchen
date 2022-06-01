@@ -14,6 +14,7 @@ export default function Footer() {
           href="https://joaolavelino.netlify.app"
           target="_blank"
           className={styles.button}
+          rel="noreferrer"
         >
           Visit my portfolio for more projects
         </a>
